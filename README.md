@@ -22,4 +22,4 @@ El administrador puede ejecutar 4 acciones: agregar productos, agregar usuarios,
 
 ![alt text](https://github.com/ftriana3185/ninja-store/tree/master/images/asignar-productos-clientes.png "Asignar productos-clientes")
 
-![alt text](https://github.com/ftriana3185/ninja-store/tree/master/images/items.png "Items de un cliente")
+![alt text](https://github.com/ftriana3185/ninja-store/tree/master/images/items.png?raw=true "Items de un cliente")
