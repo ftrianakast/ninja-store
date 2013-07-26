@@ -14,13 +14,20 @@ Este proyecto extiende la funcionalidad de dicha tienda añadiendo característi
 
 Los siguientes son algunos de los resultados obtenidos:
 
+###Login del aplicativo###
+
 ![alt text](https://raw.github.com/ftriana3185/ninja-store/master/images/ninja-store-login.png "Login Aplicación")
-Hay dos roles dentro de la aplicación, un rol administrador y un rol cliente.
+
+
+###Menu del administrador###
 
 ![alt text](https://raw.github.com/ftriana3185/ninja-store/master/images/ninja-store-admin-menu.png "Menu Administrador")
-El administrador puede ejecutar 4 acciones: agregar productos, agregar usuarios, asignar productos a usuarios y editar un producto
+
+###Asignar productos a clientes###
 
 ![alt text](https://raw.github.com/ftriana3185/ninja-store/master/images/asignar-productos-clientes.png "Asignar productos-clientes")
+
+###Items de un cliente###
 
 ![alt text](https://raw.github.com/ftriana3185/ninja-store/master/images/items.png "Items de un cliente")
 
