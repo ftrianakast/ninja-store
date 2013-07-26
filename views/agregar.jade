@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    #wrap
+      #header  
+            #logo
+                a(href='/')
+                    img(src='/images/logo.png')
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+      .container
+           include adminheader
+
+           form.form-signin(method='post')  
+                h2 Agregue su producto
+                
+                input(type='text', placeholder='Ingrese el nombre del producto', name='producto').input-block-level
+                
+                input(type='text', placeholder='Ingrese la cantidad de producto', name='cantidad').input-block-level
+                textarea(name="precio", placeholder='Ingrese el  precio del producto').input-block-level
+                textarea(name="description", placeholder='Ingrese la descripcion del producto').input-block-level
+
+                input(type='submit', value='Agregar').btn.btn-large btn-primary
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+       include footer

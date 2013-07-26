@@ -1,0 +1,76 @@
+extends layout
+
+block content
+    #wrap
+      #header  
+            #logo
+                a(href='/')
+                    img(src='/images/logo.png')
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+      .container
+           include adminheader
+
+           form.form-signin(method='post')  
+                h3 Asigne los productos a sus clientes
+
+                p Recuerde que solo aparecerán los productos con cantidad disponible
+                
+                label.color-blue Cliente
+                select(name='browser', placeholder='Doble click para desplegar la lista de clientes').input-block-level
+                    -for (var i in items)
+                        -var item = items[i]
+                           -if(item.rol!="administrador")  
+                             option #{item.username}                   
+                
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                              
+                label.color-blue Producto
+                select(name='prod', placeholder='Doble click para desplegar la lista de productos').input-block-level
+                    -for (var p in products)
+                        -var product = products[p] 
+                            option #{product.product_name}      
+                
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                div.span12
+                              
+
+                input(type='submit', value='Asignar').btn.btn-large btn-primary
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+       include footer

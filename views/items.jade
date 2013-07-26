@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+  #wrap
+    #header
+          #logo
+            img(src='/images/logo.png')
+    div.row-fluid
+        div.span12.background-color-blue#color-row
+    .container
+            include userbar
+            ul.thumbnails.center
+              -console.log(items)
+              -for (var id in items)
+                -var item = items[id]                    
+                div.thumbnail.span5.margin
+                      a(href='/item/#{id}')  
+                        h3 #{item.product_name} 
+                      h3 $#{item.precio}
+                      img(src="/images/default.png", alt="")
+                      p #{item.descripcion}
+
+    div.span12  
+  div.row-fluid
+    div.span12.background-color-blue#color-row    
+  include footer

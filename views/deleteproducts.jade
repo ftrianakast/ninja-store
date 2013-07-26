@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    #wrap
+      #header  
+            #logo
+                a(href='/')
+                    img(src='/images/logo.png')
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+      .container
+           include adminheader
+
+           form.form-signin(method='post')  
+                h3 Borre un producto
+
+                p Recuerde que se borrarán los productos para cada uno de los clientes
+                
+                label.color-blue Elija el producto que desea borrar
+                select(name='productos', placeholder='Doble click para desplegar la lista de productos').input-block-level
+                    -for (var p in products)
+                        -var product = products[p] 
+                            option #{product.product_name}                 
+                        
+
+                input(type='submit', value='Borrar Producto').btn.btn-large btn-primary
+      div.row-fluid
+        div.span12.background-color-blue#color-row  
+       include footer

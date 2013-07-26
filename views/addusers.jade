@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    #wrap
+      #header  
+            #logo
+                a(href='/')
+                    img(src='/images/logo.png')
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+      .container
+           include adminheader
+
+           form.form-signin(method='post')  
+                h3 Agregue clientes
+  
+                label.color-blue Username (Sera con el que haga login el cliente)
+                input(type='text', placeholder='Ingrese el user_name del usuario', name='usuario').input-block-level
+
+                label.color-blue Password 
+                input(type='password', placeholder='Ingrese el password del usuario', name='password').input-block-level
+
+                label.color-blue Rol 
+                select(name='roles', placeholder='Doble click para desplegar la lista de roles').input-block-level
+                  option client
+                  option administrador
+
+                input(type='submit', value='AddUser').btn.btn-large btn-primary
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+       include footer

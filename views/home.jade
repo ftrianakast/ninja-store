@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    #wrap
+      #header  
+            #logo
+                a(href='/')
+                    img(src='/images/logo.png')
+
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+      .container
+            .hero-unit
+                h2 Bienvenido a la tienda ninja
+                h5 #{operacion.toLowerCase()}         
+            form(method='post')   
+                .table
+                    .row-fluid
+                        .span2
+                        .span2
+                        .span4 
+                            label.color-blue Usuario
+                            input(type='text', name='username')
+                        
+                    .row-fluid
+                        .span2
+                        .span2 
+                        .span4 
+                            label.color-blue Contraseña      
+                            input(type='password', name='password')
+                        .span2
+                        .span2
+                    .row-fluid
+                        .span2
+                        .span2 
+                        .span4
+                            input(type='submit', value='Log In')
+                        .span2
+                        .span2   
+    div.row-fluid
+        div.span12.background-color-blue#color-row
+    include footer

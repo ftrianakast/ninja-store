@@ -1,0 +1,41 @@
+#adminheader           
+            .hero-unit
+                h4 Bienvenido señor administrador 
+                        h4 ¿Desea salir?,
+                             a(href='/logout').btn-large Log Out     
+                ul.nav.nav-pills.hero-margin
+                         li.span4                            
+                       
+                h5 #{operacion.toLowerCase()}       
+
+
+                div.table.auxiliar-color-background
+                    div.row-fluid
+                        div.span3
+                            div.big-icon
+                                a.red-color(href='/agregar')
+                                    i.icon-folder-open
+                                    h4 Agregar productos
+
+                        div.span3
+                            div.big-icon
+                                a.red-color(href='/asignar')
+                                    i.icon-group
+                                    h4 Asignar productos                   
+                        div.span3
+                            div.big-icon
+                                a.red-color(href='/editarProductos')
+                                    i.icon-edit
+                                    h4 Editar productos
+
+                        div.span3
+                            div.big-icon
+                                a.red-color(href='/addusers')
+                                    i.icon-male
+                                    h4 Agregar usuarios
+                      
+           
+
+            hr
+            div.span12
+

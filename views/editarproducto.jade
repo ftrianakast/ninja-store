@@ -1,0 +1,37 @@
+extends layout
+
+block content
+    #wrap
+      #header  
+            #logo
+                a(href='/')
+                    img(src='/images/logo.png')
+
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+      .container
+           include adminheader
+
+           form.form-signin(method='post')  
+                h3 Edite un producto
+
+                
+                label.color-blue Elija el producto que desea editar
+                select(name='productos', placeholder='Doble click para desplegar la lista de productos').input-block-level
+                    -for (var p in products)
+                        -var product = products[p] 
+                            option #{product.product_name}                 
+                
+                input(type='text', placeholder='Ingrese el nombre nuevo del producto', name='producto').input-block-level       
+
+                input(type='text', placeholder='Ingrese la cantidad nueva del producto', name='cantidad').input-block-level
+
+                input(type='text', placeholder='Ingrese el precio nuevo', name='precio').input-block-level
+
+                textarea(name="description", placeholder='Ingrese la descripcion nueva del producto').input-block-level
+
+
+                input(type='submit', value='Editar').btn.btn-large btn-primary
+      div.row-fluid
+        div.span12.background-color-blue#color-row
+       include footer
